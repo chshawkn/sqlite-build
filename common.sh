@@ -17,8 +17,6 @@ ARCHIVE_URL="https://www.sqlite.org/2017/sqlite-autoconf-3180000.tar.gz"
 #ARCHIVE_URL="https://www.sqlite.org/2017/sqlite-amalgamation-3180000.zip"
 
 if [[ ! -v AND_ARCHS ]]; then
-    # mips32 is recognized as mips64
-    #: "${AND_ARCHS:=android android-armeabi android-mips android-x86 android64 android64-aarch64}"
     : "${AND_ARCHS:=android android-armeabi android-x86 android64 android64-aarch64}"
 fi
 
